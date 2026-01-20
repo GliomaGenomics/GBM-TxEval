@@ -23,7 +23,7 @@ git clone https://github.com/GliomaGenomics/GBM-TxEval
 
 ### 2. Open the project in RStudio
 
-Navigate to the cloned folder and open the RStudio project file: **GBM-TxEval.Rproj**
+Navigate to the cloned folder and open the RStudio project file: `GBM-TxEval.Rproj`
 
 ### 3. Run the Shiny app
 
