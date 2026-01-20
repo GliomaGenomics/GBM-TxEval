@@ -11,6 +11,15 @@
 
 GBM-TxEval is a computational tool designed to evaluate transcriptional treatment responses in glioblastoma (GBM). It processes longitudinal gene expression data to calculate therapy-induced log2 fold changes, performs gene set enrichment analysis, and projects the results into principal component space. This enables stratification of samples into "Up" and "Down" responder subtypes, supporting the investigation of resistance mechanisms and selection of optimal models for preclinical drug evaluation.
 
+## 📦 File Structure
+
+- `R/utils_io.R`: File loading utilities.
+- `R/utils_processing.R`: Core computation functions (normalization, filtering, log2FC, FGSEA).
+- `server/`: Modular server logic for each step.
+- `ui/`: Modular UI components for each step.
+- `global.R`: Global configuration: packages, gene length tables, gene sets, PCA loadings, etc.
+- `app.R`: Main entry point combining all modules into a seamless workflow.
+
 ## 🔧 How to Use
 
 ### 1. Clone the repository
@@ -28,15 +37,6 @@ Navigate to the cloned folder and open the RStudio project file: `GBM-TxEval.Rpr
 ### 3. Run the Shiny app
 
 In RStudio, open `app.R` and click **Run App**
-
-## 📦 File Structure
-
-- `R/utils_io.R`: File loading utilities.
-- `R/utils_processing.R`: Core computation functions (normalization, filtering, log2FC, FGSEA).
-- `server/`: Modular server logic for each step.
-- `ui/`: Modular UI components for each step.
-- `global.R`: Global configuration: packages, gene length tables, gene sets, PCA loadings, etc.
-- `app.R`: Main entry point combining all modules into a seamless workflow.
 
 ## ⚙️ Workflow Overview
 
