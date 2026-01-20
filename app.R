@@ -1,7 +1,6 @@
 # app.R
 
 library(shiny)
-setwd("/mnt/scratch/gdmn373/GBM-TxEval")
 
 # Source global settings and resources
 source("global.R")
