@@ -1,6 +1,7 @@
 # ui/main_ui.R
 
 ui <- fluidPage(
+  title = "GBM-TxEval",
   theme = my_theme,
 
   shinyjs::useShinyjs(),
